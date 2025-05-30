@@ -1,3 +1,244 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: Arial, Helvetica, sans-serif;
+//     background-color: antiquewhite;
+// }
+  
+//   .container {
+//     max-width: 1320px;
+//     margin: 0 auto;
+//     width: 100%;
+//     min-height: 80vh;
+//   }
+  
+//   .api-heading {
+//     text-align: center;
+//     margin-top: 30px;
+  
+//     h1 {
+//       line-height: 1.3;
+  
+//       .api {
+//         color: red;
+//       }
+  
+//       .cases {
+//         color: blue;
+//       }
+//     }
+//   }
+  
+//   .api-box-div {
+//     display: flex;
+//     justify-content: center;
+  
+//     .api-box {
+//       border: 3px solid brown;
+//       padding: 15px 30px;
+//       margin-top: 20px;
+//       cursor: default;
+//     }
+//   }
+  
+//   .line-div {
+//     display: flex;
+//     justify-content: center;
+  
+//     .line {
+//       border-left: 2px solid brown;
+//       height: 70px;
+//     }
+//   }
+  
+//   .internal {
+//     text-align: center;
+  
+//     .line-div .line {
+//       border-left: 2px solid brown;
+//       height: 40px;
+//     }
+//   }
+  
+//   .text-center {
+//     text-align: center;
+//     margin-top: 20px;
+//   }
+  
+//   .horizontal-line-center {
+//     display: flex;
+//     justify-content: center;
+  
+//     .horizontal-line {
+//       width: 600px;
+//       height: 0;
+//       border-top: 2px solid brown;
+//     }
+//   }
+  
+//   .two-vertical-lines {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 600px;
+//     margin: -42px auto 0;
+  
+//     div {
+//       border-left: 2px solid brown;
+//       height: 60px;
+//       width: 2px;
+//     }
+//   }
+
+// .two-verticals-lines {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 20px;
+//     border: 1px solid brown;
+//     height: 20px;
+// }
+  
+//   .side-labels {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 670px;
+//     margin: 10px auto 0;
+  
+//     .side-label {
+//       position: relative;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+  
+//       h3 {
+//         font-weight: bold;
+//         text-align: center;
+//         margin-bottom: 4px;
+//       }
+  
+//       .line-under-text {
+//         position: relative;
+//         width: 2px;
+//         height: 40px;
+//         background-color: brown;
+//         margin-bottom: 0;
+//       }
+  
+//       .horizontal-connected-line {
+//         width: 90px;
+//         height: 2px;
+//         background-color: brown;
+//         margin-top: 0;
+//         border-top-left-radius: 1px;
+//       }
+//     }
+//   }
+  
+//   @media (max-width: 1100px) {
+//     .horizontal-line-center .horizontal-line,
+//     .two-vertical-lines {
+//       width: 90%;
+//     }
+  
+//     .side-labels {
+//       width: 95%;
+  
+//       h3 {
+//         font-size: 1rem;
+//       }
+//     }
+//   }
+  
+//   @media (max-width: 800px) {
+//     .container {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%) rotate(270deg);
+//       transform-origin: center center;
+//       width: 100vh;
+//       height: 100vw;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//     }
+  
+//     .api-heading h1 {
+//       font-size: 6vw;
+//     }
+  
+//     .api-box {
+//       font-size: 5vw;
+//       padding: 12px 20px;
+//     }
+  
+//     .horizontal-line-center .horizontal-line,
+//     .two-vertical-lines {
+//       width: 80vw;
+//     }
+  
+//     .side-labels {
+//       width: 90vw;
+  
+//       h3 {
+//         font-size: 4vw;
+//       }
+  
+//       .line-under-text {
+//         height: 30px;
+//       }
+  
+//       .horizontal-connected-line {
+//         width: 20vw;
+//         height: 2px;
+//       }
+//     }
+  
+//     .text-center {
+//       font-size: 4vw;
+//     }
+  
+//     .line-div .line {
+//       height: 50px !important;
+//     }
+  
+//     .two-vertical-lines div {
+//       height: 40px !important;
+//     }
+//   }
+  
+//   @media (max-width: 480px) {
+//     .api-heading h1 {
+//       font-size: 7vw;
+//     }
+  
+//     .api-box {
+//       font-size: 6vw;
+//       padding: 10px 15px;
+//     }
+  
+//     .side-labels h3 {
+//       font-size: 5vw;
+//     }
+  
+//     .horizontal-line-center .horizontal-line,
+//     .two-vertical-lines {
+//       width: 90vw;
+//     }
+//   }
+  
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -71,16 +312,73 @@
     justify-content: center;
   
     .horizontal-line {
-      width: 600px;
+      width: 500px;
       height: 0;
       border-top: 2px solid brown;
     }
   }
   
+
+  .structure-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  
+    .side-labels {
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+  
+      .side-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        h3 {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        .line-under-text {
+          width: 2px;
+          height: 50px;
+          background-color: brown;
+        }
+      }
+    }
+  
+    .horizontal-connector {
+      position: relative;
+      margin-top: -10px;
+      width: 600px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  
+      .horizontal-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130px;
+        height: 2px;
+        background-color: brown;
+      }
+  
+      .vertical-start,
+      .vertical-end {
+        width: 2px;
+        height: 60px;
+        background-color: brown;
+      }
+    }
+  }
+
   .two-vertical-lines {
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 500px;
     margin: -42px auto 0;
   
     div {
@@ -90,54 +388,15 @@
     }
   }
   
-  .side-labels {
-    display: flex;
-    justify-content: space-between;
-    width: 670px;
-    margin: 10px auto 0;
-  
-    .side-label {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      h3 {
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 4px;
-      }
-  
-      .line-under-text {
-        position: relative;
-        width: 2px;
-        height: 40px;
-        background-color: brown;
-        margin-bottom: 0;
-      }
-  
-      .horizontal-connected-line {
-        width: 90px;
-        height: 2px;
-        background-color: brown;
-        margin-top: 0;
-        border-top-left-radius: 1px;
-      }
-    }
-  }
-  
+
   @media (max-width: 1100px) {
     .horizontal-line-center .horizontal-line,
-    .two-vertical-lines {
+    .structure-diagram .horizontal-connector {
       width: 90%;
     }
   
-    .side-labels {
-      width: 95%;
-  
-      h3 {
-        font-size: 1rem;
-      }
+    .structure-diagram .side-labels {
+      width: 90%;
     }
   }
   
@@ -150,7 +409,6 @@
       transform-origin: center center;
       width: 100vh;
       height: 100vw;
-  
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -167,11 +425,11 @@
     }
   
     .horizontal-line-center .horizontal-line,
-    .two-vertical-lines {
+    .structure-diagram .horizontal-connector {
       width: 80vw;
     }
   
-    .side-labels {
+    .structure-diagram .side-labels {
       width: 90vw;
   
       h3 {
@@ -181,23 +439,10 @@
       .line-under-text {
         height: 30px;
       }
-  
-      .horizontal-connected-line {
-        width: 20vw;
-        height: 2px;
-      }
     }
   
     .text-center {
       font-size: 4vw;
-    }
-  
-    .line-div .line {
-      height: 50px !important;
-    }
-  
-    .two-vertical-lines div {
-      height: 40px !important;
     }
   }
   
@@ -211,13 +456,13 @@
       padding: 10px 15px;
     }
   
-    .side-labels h3 {
+    .structure-diagram .side-labels h3 {
       font-size: 5vw;
     }
   
     .horizontal-line-center .horizontal-line,
-    .two-vertical-lines {
+    .structure-diagram .horizontal-connector {
       width: 90vw;
     }
   }
-  
+
