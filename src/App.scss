@@ -55,15 +55,9 @@
   .internal {
     text-align: center;
   
-    h3 {
-      font-weight: bold;
-    }
-  
-    .line-div {
-      .line {
-        border-left: 2px solid brown;
-        height: 40px;
-      }
+    .line-div .line {
+      border-left: 2px solid brown;
+      height: 40px;
     }
   }
   
@@ -101,15 +95,36 @@
     justify-content: space-between;
     width: 670px;
     margin: 10px auto 0;
-    text-align: center;
   
-    h3 {
-      font-weight: bold;
-      width: 100px;
+    .side-label {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h3 {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 4px;
+      }
+  
+      .line-under-text {
+        position: relative;
+        width: 2px;
+        height: 40px;
+        background-color: brown;
+        margin-bottom: 0;
+      }
+  
+      .horizontal-connected-line {
+        width: 90px;
+        height: 2px;
+        background-color: brown;
+        margin-top: 0;
+        border-top-left-radius: 1px;
+      }
     }
   }
-  
-  /* Responsive tweaks for all screen sizes */
   
   @media (max-width: 1100px) {
     .horizontal-line-center .horizontal-line,
@@ -121,7 +136,6 @@
       width: 95%;
   
       h3 {
-        width: auto;
         font-size: 1rem;
       }
     }
@@ -162,7 +176,15 @@
   
       h3 {
         font-size: 4vw;
-        width: auto;
+      }
+  
+      .line-under-text {
+        height: 30px;
+      }
+  
+      .horizontal-connected-line {
+        width: 20vw;
+        height: 2px;
       }
     }
   
